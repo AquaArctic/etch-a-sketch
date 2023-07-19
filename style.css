@@ -1,0 +1,77 @@
+#game-container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-environment {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+#buttons {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 4px solid darkred;
+    border-style: groove;
+    background-color: azure;
+    padding: 10px; /* Add padding to create space around the buttons */
+    margin: 0; 
+    height: fit-content;
+}
+
+button {
+
+    margin: 10px;
+    background-color: bisque;
+    color: darkred;
+    font-weight:bold;
+    border: 2px solid darkred; 
+    border-style: dashed;
+    transition: transform 0.2s;
+    font-size: 16px;
+    padding: 10px 20px; 
+}
+
+button:hover {
+
+    transform: scale(1.1); /* Enlarge the button on hover */
+  }
+
+  
+  
+  .grid-item {
+    width: calc(960px / var(--grid-size));
+    height: calc(960px / var(--grid-size));
+    background-color: white;
+    border: 1px solid black;
+    box-sizing: border-box;
+  }
+  
+
+  #grid {
+
+   display: flex;
+   flex-wrap: wrap;
+   border: 2px solid darkred; 
+   width: 960px;
+   height: 960px;
+  }
+
+  body {
+
+    background-color: darkslategray;
+  }
+
+  h1 {
+
+    color: antiquewhite;
+  }
